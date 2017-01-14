@@ -13,5 +13,9 @@ $(function(){
     .mouseout( () => {
       $("#cancel").get(0).pause();
       console.log("sa");
-    });
   });
+});
+
+//Severの設定
+
+app.listen(process.env.PORT || 8000);
