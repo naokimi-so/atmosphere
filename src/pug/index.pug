@@ -1,0 +1,68 @@
+extends layout/_DefaultLayout
+
+
+prepend ConfigBlock
+  - page_name = ''
+
+//- append StylesheetBlock
+
+//- append JavascriptBlock
+
+block ContentBlock
+  .bg-overray
+    .content
+      img.backathon-logo(src="/img/baka3.png")
+      .row.row1
+        .col-20
+          .drum-roll
+            | ドラムロール
+        .col-20
+          .dedede
+            | ででででーん
+        .col-20
+          .heart
+            | 心臓の音
+        .col-20
+          .kansei
+            | 歓声
+        .col-20
+          .kekka
+            | 結果を発表します
+      .row.row2
+        .col-20
+          .kidou
+            | 起動します
+        .col-20
+          .trumpet
+            | トランペット
+        .col-20
+          .regulation
+            | 自主規制
+        .col-20
+          .tudukihaweb
+            | 続きはWebで！
+        .col-20
+          .finish
+            | ロール終わり
+
+  //audio
+  audio#drum-roll(preload="auto")
+    source(src="/sound/drum-roll.mp3" type="audio/mp3")
+  audio#dedede(preload="auto")
+    source(src="/sound/dedede.mp3" type="audio/mp3")
+  audio#heart(preload="auto")
+    source(src="/sound/heart.mp3" type="audio/mp3")
+  audio#kansei(preload="auto")
+    source(src="/sound/kansei.mp3" type="audio/mp3")
+  audio#kekka(preload="auto")
+    source(src="/sound/kekka.mp3" type="audio/mp3")
+  audio#kidou(preload="auto")
+    source(src="/sound/kidou.mp3" type="audio/mp3")
+  audio#trumpet(preload="auto")
+    source(src="/sound/trumpet.mp3" type="audio/mp3")
+  audio#regulation(preload="auto")
+    source(src="/sound/regulation.mp3" type="audio/mp3")
+  audio#tudukihaweb(preload="auto")
+    source(src="/sound/tudukihaweb.mp3" type="audio/mp3")
+  audio#finish(preload="auto")
+    source(src="/sound/finish.mp3" type="audio/mp3")
