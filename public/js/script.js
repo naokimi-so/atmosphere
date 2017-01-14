@@ -9848,10 +9848,14 @@ var _jquery2 = _interopRequireDefault(_jquery);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 (0, _jquery2.default)(function () {
-  // $className = ('');
   (0, _jquery2.default)('.col-20 div').on('click', function (e) {
     var className = e.toElement.className;
     (0, _jquery2.default)("#" + className).get(0).play();
+  }).mouseover(function () {
+    (0, _jquery2.default)("#cancel").get(0).play();
+  }).mouseout(function () {
+    (0, _jquery2.default)("#cancel").get(0).pause();
+    console.log("sa");
   });
 });
 
